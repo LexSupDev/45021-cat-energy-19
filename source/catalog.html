@@ -2,30 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img src="img/logo-mobile-header-png.png" alt="Логотип Cat Energy" width="191" height="39" class="page-header__logo-image">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href= "index.html" class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <img src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39" class="page-header__logo-image">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <input class="main-nav__toggle" id="main-nav__toggle" type="checkbox">
+          <label for="main-nav__toggle" class="main-nav__toggle-container"></label>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html" class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html" class="site-list__link">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
