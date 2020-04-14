@@ -1,0 +1,18 @@
+.catalog-spec {
+  @include reset-list;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-spec__property {
+  margin: 0;
+}
+
+.catalog-spec__value {
+  margin: 0;
+}
+
+.catalog-spec__item {
+  display: flex;
+  justify-content: space-between;
+}

@@ -12,4 +12,6 @@
 .advantages__list {
   @include reset-list;
   padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }

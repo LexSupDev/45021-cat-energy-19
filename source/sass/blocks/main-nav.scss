@@ -12,7 +12,7 @@
 
 .main-nav__toggle:checked {
   & ~ .main-nav__toggle-container {
-    background: url(../img/icon-close.svg) no-repeat;
+    background: url("../img/icon-close.svg") no-repeat;
   }
 
   & ~ .main-nav__wrapper {
@@ -24,7 +24,7 @@
   @include pseudo;
   width: 19px;
   height: 19px;
-  background: url(../img/icon-burger.svg) no-repeat;
+  background: url("../img/icon-burger.svg") no-repeat;
   top: 25px;
   right: 20px;
 }

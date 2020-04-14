@@ -1,0 +1,16 @@
+.catalog__wrapper {
+  padding: 0;
+}
+
+.catalog__title {
+  margin: 0;
+  font-family: $ff-add;
+  font-size: $ff-size-large;
+  font-weight: normal;
+  padding: 28px 20px 32px;
+  border-bottom: 1px solid $color-border;
+}
+
+.catalog__list {
+  @include reset-list;
+}

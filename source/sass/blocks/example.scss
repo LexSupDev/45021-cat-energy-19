@@ -27,7 +27,7 @@
   display: none;
 
   &:checked ~ .example__toggle-container {
-    &:before {
+    &::before {
       transform: translateX(35px);
     }
   }
@@ -43,7 +43,7 @@
   border-radius: 6px;
   position: relative;
 
-  &:before {
+  &::before {
     @include pseudo;
     width: 35px;
     height: 6px;
@@ -55,17 +55,17 @@
 }
 
 .example__toggle-txt {
-  &:before {
+  &::before {
     @include pseudo;
-    content: 'Было';
+    content: "Было";
     text-transform: uppercase;
     top: -1px;
     left: -55px;
   }
 
-  &:after {
+  &::after {
     @include pseudo;
-    content: 'Стало';
+    content: "Стало";
     text-transform: uppercase;
     right: -61px;
     top: -1px;

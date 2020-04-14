@@ -7,7 +7,8 @@
 .promo__wrapper {
   padding-top: 23px;
   padding-bottom: 20px;
-  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") top center no-repeat;
+  background-size: contain;
 }
 
 .promo__title {
