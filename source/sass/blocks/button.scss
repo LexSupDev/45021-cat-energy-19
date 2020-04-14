@@ -1,0 +1,15 @@
+.button {
+  width: 100%;
+  padding: 11px 0;
+  font-family: $ff-add;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: $color-main;
+  color: $color-white;
+
+  &--more {
+    color: $color-black;
+    background-color: $color-bg;
+  }
+}

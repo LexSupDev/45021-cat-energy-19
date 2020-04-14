@@ -2,30 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img src="img/logo-mobile-header-png.png" alt="Логотип Cat Energy" width="191" height="39" class="page-header__logo-image">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href= "index.html" class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <img src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39" class="page-header__logo-image">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <input class="main-nav__toggle" id="main-nav__toggle" type="checkbox">
+          <label for="main-nav__toggle" class="main-nav__toggle-container"></label>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html" class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -109,34 +116,45 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts contacts--bg-grey">
-        <p class="contacts__partnership">Прилашаем к сотрудничеству!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="page-footer__contacts contacts">
+        <div class="contacts__wrapper wrapper">
+          <p class="contacts__partnership">Прилашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
 
       <div class="page-footer__map map">
-        <img src="img/map.jpg" alt="Карта">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae44e6f80791c6f27be88a23c7696c3d49a5b89f94647d16b1c614c7259d35cbd&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
       </div>
 
       <a href="" class="page-footer__logo">
-        <img src="img/footer-logo-svg.svg" width="128" height="24" alt="Логотип Cat Energy" class="page-footer__logo-image">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy" class="page-footer__logo-image">
       </a>
 
       <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--vk"></li>
-          <li class="social__item social__item--instagram"></li>
-          <li class="social__item social__item--facebook"></li>
-        </ul>
+        <div class="social__wrapper wrapper">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link social__link--vk"></a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--instagram"></a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--facebook"></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <a href="" class="copyright__logo">
-          <p class="copyright__title">HTML Academy</p>
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy" class="copyright__logo-image--html">
-        </a>
+        <div class="copyright__wrapper wrapper">
+          <a href="" class="copyright__logo">
+            <p class="copyright__title">HTML Academy</p>
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy" class="copyright__logo-image--html">
+          </a>
+        </div>
       </div>
-
     </footer>
 
   </body>

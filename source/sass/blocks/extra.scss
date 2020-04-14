@@ -1,0 +1,30 @@
+.extra__wrapper {
+  position: relative;
+
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 3px;
+    background-color: $color-main;
+    left: 0;
+    top: 15px;
+    z-index: -1;
+  }
+}
+
+.extra__title {
+  width: 268px;
+  font-family: $ff-add;
+  font-size: 24px;
+  font-weight: normal;
+  padding-left: 20px;
+  background-color: $color-white;
+}
+
+.extra__list-inner {
+  padding: 0 20px;
+}
+
+.extra__list {
+  @include reset-list;
+}

@@ -1,0 +1,17 @@
+.advantages {
+  margin-bottom: 45px;
+}
+
+.advantages__title {
+  font-family: $ff-add;
+  font-size: $ff-size-large;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.advantages__list {
+  @include reset-list;
+  padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}

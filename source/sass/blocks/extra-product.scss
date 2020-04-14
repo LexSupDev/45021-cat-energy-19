@@ -1,0 +1,26 @@
+.extra-product {
+  padding-top: 12px;
+  border-top: 1px solid $color-border-item;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-item;
+  }
+}
+
+.extra-product__title {
+  font-family: $ff-add;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.extra-product__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-product__button {
+  margin-bottom: 15px;
+}

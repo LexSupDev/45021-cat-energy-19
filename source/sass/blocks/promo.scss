@@ -1,0 +1,33 @@
+.promo {
+  text-align: center;
+  font-family: $ff-add;
+  color: $color-white;
+}
+
+.promo__wrapper {
+  padding-top: 23px;
+  padding-bottom: 20px;
+  background: url("../img/index-background-mobile@1x.jpg") top center no-repeat;
+  background-size: contain;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: $ff-size-large;
+  font-weight: normal;
+  padding-bottom: 19px;
+}
+
+.promo__desc {
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+
+.promo__link {
+  display: block;
+  padding: 12px;
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
