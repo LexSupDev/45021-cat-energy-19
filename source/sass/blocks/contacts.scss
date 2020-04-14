@@ -1,0 +1,22 @@
+.contacts {
+  padding: 29px 0 25px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__partnership {
+  margin: 0;
+  font-family: $ff-add;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}

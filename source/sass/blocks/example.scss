@@ -1,0 +1,73 @@
+.example {
+  background-color: $color-bg;
+}
+
+.example__title {
+  padding: 30px 0;
+  font-family: $ff-add;
+  font-size: $ff-size-large;
+  font-weight: normal;
+  margin: 0;
+}
+
+.example__desc {
+  padding-right: 12px;
+  line-height: 18px;
+}
+
+.example__compare {
+  padding-bottom: 39px;
+}
+
+.example__compare-image {
+  margin-bottom: 35px;
+}
+
+.example__toggle {
+  display: none;
+
+  &:checked ~ .example__toggle-container {
+    &:before {
+      transform: translateX(35px);
+    }
+  }
+}
+
+.example__toggle-container {
+  margin: 0 auto;
+  display: block;
+  width: 84px;
+  height: 14px;
+  background-color: $color-white;
+  border: 1px solid $color-border-item;
+  border-radius: 6px;
+  position: relative;
+
+  &:before {
+    @include pseudo;
+    width: 35px;
+    height: 6px;
+    background-color: $color-main;
+    border-radius: 3px;
+    top: 3px;
+    left: 6px;
+  }
+}
+
+.example__toggle-txt {
+  &:before {
+    @include pseudo;
+    content: 'Было';
+    text-transform: uppercase;
+    top: -1px;
+    left: -55px;
+  }
+
+  &:after {
+    @include pseudo;
+    content: 'Стало';
+    text-transform: uppercase;
+    right: -61px;
+    top: -1px;
+  }
+}
