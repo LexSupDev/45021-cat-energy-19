@@ -1,0 +1,182 @@
+.field-item {
+  margin: 0;
+  padding: 30px 20px 23px;
+  border: 0;
+  position: relative;
+
+  &--border {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px
+     solid $color-border;
+  }
+
+  &--decor{
+    margin-top: 30px;
+    padding: 0;
+    &::after {
+      @include pseudo;
+      width: 100vw;
+      height: 3px;
+      background-color: $color-main;
+      top: 15px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.field-item__legend {
+  font-size: 24px;
+  background-color: $color-white;
+  line-height: 24px;
+
+  &--decor {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  &--contacts {
+    width: 221px;
+  }
+
+  &--comment {
+    padding-right: 22px;
+  }
+
+  &--more {
+    padding-right: 25px;
+  }
+}
+
+.field-item__inner {
+  &--wrap {
+    padding: 0 20px;
+  }
+}
+
+.field-item__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--purpose {
+    margin-bottom: 26px;
+  }
+
+  &--email {
+    &::after {
+      @include pseudo;
+      width: 17px;
+      height: 13px;
+      background: url("../img/icon-mail.svg") no-repeat;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  &--phone {
+    &::after {
+      @include pseudo;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icon-phone.svg") no-repeat;
+      right: 12px;
+      top: 12px;
+    }
+  }
+
+  &--more {
+    margin-bottom: 25px;
+  }
+}
+
+.field-item__label {
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin-right: 15px;
+  position: relative;
+
+  &--purpose {
+    padding-left: 44px;
+    position: relative;
+    margin-right: 0;
+
+    &::before {
+      @include pseudo;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      left: 0;
+      top: -8px;
+      border: 1px solid $color-border-item;
+      border-radius: 15px;
+    }
+  }
+
+  &--comment {
+    margin-right: 0;
+  }
+
+  &--more {
+    padding-left: 45px;
+
+    &:before {
+      @include pseudo;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      border: 1px solid $color-border-item;
+      left: 0;
+      top: -6px;
+    }
+  }
+}
+
+.field-item__input {
+  text-transform: uppercase;
+  padding: 11.5px 13px;
+  border: 1px solid $color-border-item;
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--purpose {
+    display: none;
+  }
+
+  &--more {
+    display: none;
+  }
+}
+
+.field-item__input:checked ~ .field-item__label {
+  &--purpose {
+    &::after {
+      @include pseudo;
+      width: 12px;
+      height: 12px;
+      background-color: $color-main;
+      border-radius: 6px;
+      left: 9px;
+      top: 1px;
+    }
+  }
+
+  &--more {
+    &::after {
+      @include pseudo;
+      width: 21px;
+      height: 16px;
+      background: url("../img/icon-tick.svg") no-repeat;
+      left: 5px;
+      top: 1px;
+    }
+  }
+}
