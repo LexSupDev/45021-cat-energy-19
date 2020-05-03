@@ -200,3 +200,26 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-item__inner {
+    &--contact {
+      display: flex;
+    }
+  }
+
+  .field-item__block {
+    &--email {
+      width: 50%;
+      margin-right: 75px;
+    }
+
+    &--phone {
+      width: 50%;
+    }
+
+    &--more {
+      width: 25%;
+    }
+  }
+}
