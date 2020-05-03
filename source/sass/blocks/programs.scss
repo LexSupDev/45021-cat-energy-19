@@ -1,3 +1,15 @@
 .programs {
   margin-bottom: 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 50%;
+  }
+}
+

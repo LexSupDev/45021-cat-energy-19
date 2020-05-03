@@ -45,3 +45,42 @@
   margin: 0;
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .stats-example__list {
+    align-items: center;
+  }
+
+  .stats-example__item {
+    width: 162px;
+    margin-right: 42px;
+
+    &--line {
+      font-size: 20px;
+      width: 174px;
+      padding: 0;
+      margin-left: auto;
+    }
+  }
+
+  .stats-example__value {
+    font-size: 30px;
+  }
+
+  .stats-example__property {
+    font-size: $ff-main-size;
+  }
+
+  .stats-example__cost {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats-example__item {
+    &--line {
+      width: 100%;
+    }
+  }
+}

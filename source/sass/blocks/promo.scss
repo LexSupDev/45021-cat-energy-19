@@ -25,9 +25,40 @@
 }
 
 .promo__link {
-  display: block;
-  padding: 12px;
-  color: $color-white;
-  text-transform: uppercase;
-  background-color: $color-main;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    background: none;
+    padding-top: 65px;
+    padding-left: 120px;
+    position: relative;
+  }
+
+  .promo__title {
+    color: $color-black;
+    //margin-left: 90px;
+    text-align: left;
+    font-size: 60px;
+    width: 415px;
+    line-height: 60px;
+    padding-bottom: 30px;
+  }
+
+  .promo__desc {
+    color: $color-black;
+    font-size: 20px;
+    text-align: left;
+    //margin-left: 90px;
+  }
+
+  .promo__link {
+    position: absolute;
+    font-size: 20px;
+    padding: 16px 27px;
+    width: auto;
+    top: 290px;
+    line-height: 20px;
+  }
 }

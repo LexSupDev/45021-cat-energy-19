@@ -1,8 +1,9 @@
 .program-item {
   background-color: $color-bg;
-  padding: 20px;
+  padding: 0 20px;
   position: relative;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -50,7 +51,7 @@
   text-transform: uppercase;
   padding-left: 70px;
   padding-bottom: 34px;
-  padding-top: 12px;
+  padding-top: 32px;
 }
 
 .program-item__desc {
@@ -75,5 +76,52 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
     right: -39px;
     top: 6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-item {
+    padding-bottom: 60px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      top: 90px;
+      right: 60px;
+    }
+
+    &--weightloss {
+      &::after {
+        background: url("../img/icon-cat-slim.svg") no-repeat;
+        width: 140px;
+        height: 194px;
+        top: 78px;
+        left: auto;
+        right: 90px;
+      }
+    }
+
+    &--mass {
+      &::after {
+        background: url("../img/icon-cat-pro.svg") no-repeat;
+        width: 268px;
+        height: 112px;
+        top: 132px;
+        left: auto;
+        right: 28px;
+      }
+    }
+  }
+
+  .program-item__title {
+    padding-top: 80px;
+    padding-left: 0;
+  }
+
+  .program-item__desc {
+    font-size: 16px;
+    width: 375px;
+    border: 0;
   }
 }

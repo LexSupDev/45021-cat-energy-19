@@ -19,12 +19,22 @@
   font-weight: normal;
   padding-left: 20px;
   background-color: $color-white;
-}
-
-.extra__list-inner {
-  padding: 0 20px;
+  margin-left: -20px;
 }
 
 .extra__list {
   @include reset-list;
+}
+
+@media (min-width: $desktop-width) {
+  .extra__list-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .extra__list {
+    width: 100%;
+    margin-right: 80px;
+  }
+
 }

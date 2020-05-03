@@ -4,3 +4,27 @@
   padding: 35px 0 33px;
   background-color: $color-bg;
 }
+
+.page-footer__inner {
+  background-color: $color-bg;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__contacts {
+    background-color: $color-white;
+    position: absolute;
+  }
+}
