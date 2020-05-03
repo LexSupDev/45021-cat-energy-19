@@ -6,13 +6,13 @@
 
   &--border {
     border-top: 1px solid $color-border;
-    border-bottom: 1px
-     solid $color-border;
+    border-bottom: 1px solid $color-border;
   }
 
-  &--decor{
+  &--decor {
     margin-top: 30px;
     padding: 0;
+
     &::after {
       @include pseudo;
       width: 100vw;
@@ -126,7 +126,7 @@
   &--more {
     padding-left: 45px;
 
-    &:before {
+    &::before {
       @include pseudo;
       width: 30px;
       height: 30px;
@@ -177,6 +177,26 @@
       background: url("../img/icon-tick.svg") no-repeat;
       left: 5px;
       top: 1px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-item__inner {
+    &--more {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .field-item__block {
+    &--more {
+      width: 50%;
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
     }
   }
 }

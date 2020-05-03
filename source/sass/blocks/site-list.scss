@@ -16,3 +16,29 @@
   color: $color-black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    border: 0;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-bottom: 2px solid $color-main;
+      padding-bottom: 10px;
+    }
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0;
+  }
+}

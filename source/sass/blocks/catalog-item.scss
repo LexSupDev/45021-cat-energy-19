@@ -25,3 +25,20 @@
   width: 100%;
   margin-bottom: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 50%;
+    border: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 25%;
+
+  }
+}
+

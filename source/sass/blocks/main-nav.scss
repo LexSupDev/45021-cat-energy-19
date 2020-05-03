@@ -28,3 +28,13 @@
   top: 25px;
   right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__toggle-container {
+    display: none;
+  }
+}

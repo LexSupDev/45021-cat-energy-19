@@ -71,3 +71,31 @@
     top: -1px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .example__compare-image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__title {
+    width: 100%;
+  }
+
+  .example__about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__compare {
+    width: 50%;
+  }
+}

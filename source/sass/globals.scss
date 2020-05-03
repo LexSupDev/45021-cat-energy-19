@@ -32,7 +32,19 @@ a {
 }
 
 .wrapper {
-  //width: $mobile-width;
   padding: 0 20px;
   margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    padding: 0 110px;
+  }
 }
