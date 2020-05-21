@@ -26,6 +26,7 @@
   font-family: $ff-add;
   font-size: 24px;
   padding: 12px 0 15px;
+  text-transform: uppercase;
 }
 
 .stats-example__property {
@@ -60,15 +61,21 @@
       width: 174px;
       padding: 0;
       margin-left: auto;
+      margin-right: 0;
     }
   }
 
   .stats-example__value {
     font-size: 30px;
+    padding-top: 17px;
+    padding-bottom: 18px;
   }
 
   .stats-example__property {
     font-size: $ff-main-size;
+    width: auto;
+    top: 60px;
+    background-color: $color-white;
   }
 
   .stats-example__cost {
@@ -78,9 +85,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .stats-example__list {
+    justify-content: start;
+  }
+
   .stats-example__item {
     &--line {
-      width: 100%;
+      width: auto;
+      margin: 0;
     }
+  }
+
+  .stats-example__cost {
+    padding-top: 60px;
+  }
+
+  .stats-example__cost-span {
+    padding-left: 60px;
   }
 }

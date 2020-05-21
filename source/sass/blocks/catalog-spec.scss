@@ -4,6 +4,11 @@
   line-height: 16px;
 }
 
+.catalog-spec__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-spec__property {
   margin: 0;
 }
@@ -12,7 +17,19 @@
   margin: 0;
 }
 
-.catalog-spec__item {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: $tablet-width) {
+  .catalog-spec {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
+
+  .catalog-spec__item {
+    border-bottom: 1px solid $color-border-item;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

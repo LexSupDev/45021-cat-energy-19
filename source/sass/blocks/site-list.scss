@@ -9,7 +9,7 @@
 
 .site-list__link {
   display: block;
-  padding: 24px 0;
+  padding: 21px 0;
   font-family: $ff-add;
   font-size: $ff-medium-size;
   font-weight: 500;
@@ -25,6 +25,8 @@
   .site-list__item {
     border: 0;
     margin-right: 35px;
+    margin-top: 13px;
+
 
     &:last-child {
       margin-right: 0;
@@ -40,5 +42,21 @@
     font-size: 18px;
     font-weight: normal;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+
+    &--index {
+      color: $color-white;
+    }
+  }
+
+  .site-list__item {
+    &--index-active {
+      border-color: $color-white;
+    }
   }
 }

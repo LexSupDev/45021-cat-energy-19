@@ -5,16 +5,16 @@
 .social__list {
   @include reset-list;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   opacity: 0.5;
-  padding: 20px 0;
+  padding: 20px 82px 20px 73px;
   border-top: 1px solid $color-border-item;
   border-bottom: 1px solid $color-border-item;
 }
 
 .social__item {
-  margin-right: 38px;
+  //margin-right: 40px;
 
   &:last-child {
     margin-right: 0;
@@ -46,5 +46,32 @@
 @media (min-width: $tablet-width) {
   .social__list {
     border: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .social__item {
+    margin-right: 28px;
+  }
+
+  .social__link {
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+      background: url("../img/icon-vk.svg") no-repeat;
+    }
+
+    &--instagram {
+      height: 23px;
+      width: 23px;
+      background: url("../img/icon-insta.svg") no-repeat;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+      background: url("../img/icon-fb.svg") no-repeat;
+    }
   }
 }
