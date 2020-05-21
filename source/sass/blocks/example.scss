@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  padding: 30px 0;
+  padding: 26px 0 34px;
   font-family: $ff-add;
   font-size: $ff-size-large;
   font-weight: normal;
@@ -13,6 +13,7 @@
 .example__desc {
   padding-right: 12px;
   line-height: 18px;
+  padding-bottom: 10px;
 }
 
 .example__compare {
@@ -73,9 +74,75 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: $color-white;
+  }
+
+  .example__wrapper {
+    padding: 0;
+  }
+
+  .example__title {
+    padding-top: 39px;
+    padding-bottom: 62px;
+    font-size: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__desc {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__stats {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 256px;
+  }
+
+  .example__compare {
+    background-color: #eaeaea;
+    padding-bottom: 81px;
+  }
+
   .example__compare-image {
     display: block;
     margin: 0 auto;
+    width: auto;
+    height: auto;
+    margin-top: -151px;
+    padding-bottom: 9px;
+  }
+
+  .example__toggle-container {
+    width: 428px;
+    height: 6px;
+    border: 0;
+    background-color: $color-bg;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      z-index: 1;
+      left: calc(50% - 4px);
+      top: 0;
+    }
+
+    &::after {
+      @include pseudo;
+      width: 34px;
+      height: 34px;
+      border-radius: 17px;
+      background-color: $color-white;
+      left: calc(50% - 17px);
+      top: -13px;
+      border: 1px solid $color-border-item;
+    }
   }
 }
 
@@ -87,15 +154,36 @@
 
   .example__title {
     width: 100%;
+    border: 0;
+    padding-left: 110px;
+    padding-bottom: 71px;
+    padding-top: 0;
   }
 
   .example__about {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding-left: 110px;
+    padding-top: 71px;
+    background-color: #eaeaea;
+    padding-bottom: 73px;
+  }
+
+  .example__desc {
+    padding-left: 0;
+    width: 465px;
+    margin: 0;
+    padding-bottom: 68px;
+  }
+
+  .example__stats {
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
   .example__compare {
     width: 50%;
+    padding: 0;
   }
 }

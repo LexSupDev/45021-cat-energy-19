@@ -2,12 +2,12 @@
   padding: 0 20px;
   text-align: center;
   border-bottom: 1px solid $color-border;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .catalog-more__title {
   margin: 0;
-  padding-top: 83px;
+  padding-top: 80px;
   padding-bottom: 10px;
   font-family: $ff-add;
   font-size: 16px;
@@ -28,9 +28,60 @@
 .catalog-more__desc {
   margin: 0;
   font-size: 12px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .catalog-more__button {
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    width: 45.764%;
+    padding: 38px;
+    border: 1px solid $color-border-item;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .catalog-more__title {
+    font-size: 20px;
+    padding: 0 50px;
+    padding-top: 124px;
+    padding-bottom: 22px;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      background: url("../img/icon-plus.svg") no-repeat;
+      top: 16px;
+      left: calc(50% - #{$icon-plus / 2});
+    }
+  }
+
+  .catalog-more__desc {
+    font-size: 16px;
+    padding: 0 30px;
+    padding-bottom: 85px;
+  }
+
+  .catalog-more__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-more {
+    width: 20.083%;
+  }
+
+  .catalog-more__title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog-more__desc {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

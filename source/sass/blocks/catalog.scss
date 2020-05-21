@@ -7,7 +7,7 @@
   font-family: $ff-add;
   font-size: $ff-size-large;
   font-weight: normal;
-  padding: 28px 20px 32px;
+  padding: 23px 20px 38px;
   border-bottom: 1px solid $color-border;
 }
 
@@ -20,15 +20,32 @@
     padding: 0 30px;
   }
 
+  .catalog__title {
+    border: 0;
+    font-size: 60px;
+    padding: 0;
+    margin-bottom: 161px;
+    margin-top: 50px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
     padding: 0 110px;
+  }
+
+  .catalog__title {
+    margin-top: 67px;
+  }
+
+  .catalog__list {
+    margin-bottom: 72px;
   }
 }

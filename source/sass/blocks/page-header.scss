@@ -13,12 +13,27 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 24px 30px 0;
   }
 
   .page-header__logo {
+    width: 174px;
     border: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    padding: 53px 110px 0;
+  }
+
+  .page-header__logo {
+    width: 203px;
+  }
+
+  .page-header__logo-image {
+    width: 100%;
   }
 }

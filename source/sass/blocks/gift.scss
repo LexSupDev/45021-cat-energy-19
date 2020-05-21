@@ -1,5 +1,5 @@
 .gift {
-  padding-top: 39px;
+  padding-top: 35px;
 }
 
 .gift__wrapper {
@@ -10,8 +10,10 @@
   text-align: center;
   font-size: 16px;
   color: $color-white;
-  padding: 190px 59px 43px;
+  padding: 190px 30px 46px;
+  line-height: 20px;
   position: relative;
+  margin-bottom: 32px;
 
   &::before {
     @include pseudo;
@@ -19,17 +21,54 @@
     height: 61px;
     background: url("../img/icon-gift.svg") no-repeat;
     left: calc(50% - #{$gift-width / 2});
-    top: 65px;
+    top: 69px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding: 0;
+    margin-bottom: 75px;
+  }
+
+  .gift__wrapper {
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+  }
+
+  .gift__desc {
+    text-align: left;
+    padding-left: 393px;
+    padding-right: 90px;
+    padding-top: 72px;
+    padding-bottom: 69px;
+    margin-bottom: 0;
+
+    &::before {
+      left: 60px;
+      top: 65px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gift {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
   .gift__wrapper {
     padding: 0;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
   }
 
   .gift__desc {
-    padding-left: 40px;
-    padding-right: 40px;
+    box-sizing: content-box;
+    text-align: center;
+    width: 165px;
+    padding: 188px 40px 42px;
+
+    &::before {
+      left: 95px;
+    }
   }
 }
