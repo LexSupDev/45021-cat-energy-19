@@ -285,10 +285,6 @@
       width: 45%;
       margin-bottom: 50px;
 
-      &:nth-child(odd) {
-        // margin-right: 125px;
-      }
-
       &:last-child {
         margin-bottom: 50px;
       }
@@ -412,6 +408,7 @@
       width: 20%;
       margin-bottom: 0;
       margin-right: 10px;
+
       &:last-child {
         margin: 0;
       }
