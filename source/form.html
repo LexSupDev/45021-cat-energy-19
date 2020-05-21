@@ -50,16 +50,16 @@
                 <input type="text" name="cat-name" class="field-item__input field-item__input--wide" placeholder="Барсик" required>
               </div>
               <div class="field-item__block">
-                <label class="field-item__label">Вес(кг):*</label>
+                <label class="field-item__label">Вес (кг):*</label>
                 <input type="number" name="cat-weight" class="field-item__input field-item__input--wide" placeholder="7" required>
               </div>
               <div class="field-item__block">
-                <label class="field-item__label">Возраст(лет):</label>
+                <label class="field-item__label">Возраст (лет):</label>
                 <input type="number" name="cat-age" class="field-item__input field-item__input--wide" placeholder="7">
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__field form__field--l-half field-item field-item--border">
+          <fieldset class="form__field form__field--l-half field-item field-item--purpose field-item--border">
             <legend class="field-item__legend visually-hidden">Цель</legend>
             <div class="field-item__inner">
               <div class="field-item__block field-item__block--purpose">
@@ -72,11 +72,11 @@
               </div>
               <div class="field-item__block field-item__block--purpose">
                 <input type="radio" id="need_advice" name="purpose" value="need_advice" class="field-item__input field-item__input--purpose">
-                <label for="need_advice" class="field-item__label field-item__label--purpose">Не знаю(нужен ваш совет)</label>
+                <label for="need_advice" class="field-item__label field-item__label--purpose">Не знаю (нужен ваш совет)</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__field field-item field-item--decor">
+          <fieldset class="form__field field-item field-item--contacts field-item--decor">
             <legend class="field-item__legend field-item__legend--decor field-item__legend--contacts">Контактные данные (владельца кота)</legend>
             <div class="field-item__inner field-item__inner--contact field-item__inner--wrap">
               <div class="field-item__block field-item__block--email">
@@ -94,11 +94,11 @@
             <div class="field-item__inner field-item__inner--wrap">
               <div class="field-item__block">
                 <label class="field-item__label field-item__label--comment"></label>
-                <textarea class="field-item__input field-item__input--wide" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="field-item__input field-item__input--wide field-item__input--comment" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__field field-item field-item--decor">
+          <fieldset class="form__field field-item field-item--more field-item--decor">
             <legend class="field-item__legend field-item__legend--decor field-item__legend--more">Дополнительно</legend>
             <div class="field-item__inner field-item__inner--more field-item__inner--wrap">
               <div class="field-item__block field-item__block--more">
@@ -130,13 +130,13 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts contacts--dark">
         <div class="contacts__wrapper wrapper">
-          <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="contacts__partnership">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-town">Санкт-Петербург</span></address>
         </div>
       </div>
 
       <div class="page-footer__map map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae44e6f80791c6f27be88a23c7696c3d49a5b89f94647d16b1c614c7259d35cbd&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae44e6f80791c6f27be88a23c7696c3d49a5b89f94647d16b1c614c7259d35cbd&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
       </div>
 
       <div class="page-footer__inner wrapper">
