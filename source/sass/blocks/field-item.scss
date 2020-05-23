@@ -212,6 +212,7 @@
       padding-bottom: 0;
 
       &::after {
+        width: (100vw + 1.5);
         left: -11%;
         top: 17px;
       }
