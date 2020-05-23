@@ -43,14 +43,14 @@
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__desc">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Корма для котов Cat Energy Pro с курицей 500г." class="promo__image">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корма для котов Cat Energy Pro с курицей 500г." class="promo__image">
           </picture>
           <a href="form.html" class="promo__link button button--promo">Подобрать программу</a>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-background-desktop@1x.jpg">
-            <img src="img/index-background-mobile@1x.jpg" alt="" class="promo__bg-image">
+            <source media="(min-width: 1440px)" srcset="img/index-background-desktop@1x.jpg 1x, img/index-background-desktop@2x.jpg 2x">
+            <img src="img/index-background-mobile@1x.jpg" srcset="img/index-background-mobile@2x.jpg 2x" alt="Бэкграунд с котом" class="promo__bg-image">
           </picture>
         </div>
       </div>
@@ -113,11 +113,15 @@
           </div>
           <div class="example__compare">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img src="img/before-mobile@1x.png" width="280" height="240" alt="Кот до" class="example__compare-image example__compare-image--before">
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="280" height="240" alt="Кот до" class="example__compare-image example__compare-image--before">
             </picture>
-            <img src="img/after-mobile@1x.png" width="320" height="240" alt="Кот после" class="example__compare-image example__compare-image--after visually-hidden">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после" class="example__compare-image example__compare-image--after visually-hidden">
+            </picture>
             <div class="example__toggle-wrapper">
               <input type="checkbox" id="example__toggle" class="example__toggle">
               <label for="example__toggle" class="example__toggle-container">

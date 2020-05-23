@@ -23,21 +23,31 @@
 
   &--leaf {
     &::after {
-      background: url("../img/advantage-leaf@1x.png") no-repeat;
+      background: url("../img/advantage-leaf@1x.png") 50% no-repeat;
       width: 26px;
       height: 29px;
       left: -63px;
       top: 16px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/advantage-leaf@2x.png") 50% no-repeat;
+        background-size: 52px auto;
+      }
     }
   }
 
   &--powder {
     &::after {
       background: url("../img/advantage-powder@1x.png") no-repeat;
-      width: 29px;
-      height: 31px;
-      left: -63px;
-      top: 16px;
+      width: 35px;
+      height: 33px;
+      left: -66px;
+      top: 14px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/advantage-powder@2x.png") 50% no-repeat;
+        background-size: 58px auto;
+      }
     }
   }
 
@@ -49,6 +59,11 @@
       left: -63px;
       top: 16px;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/advantage-dinin@2x.png") 50% no-repeat;
+      background-size: 46px auto;
+    }
   }
 
   &--clock {
@@ -58,6 +73,11 @@
       height: 31px;
       left: -63px;
       top: 16px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/advantage-clock@2x.png") 50% no-repeat;
+      background-size: 52px auto;
     }
   }
 }

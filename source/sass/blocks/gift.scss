@@ -4,6 +4,11 @@
 
 .gift__wrapper {
   background: url("../img/gift-photo-mobile@1x.jpg") center center no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/gift-photo-mobile@2x.jpg") 50% no-repeat;
+    background-size: 280px auto;
+  }
 }
 
 .gift__desc {
@@ -33,6 +38,11 @@
 
   .gift__wrapper {
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-tablet@2x.jpg") 50% no-repeat;
+      background-size: 708px auto;
+    }
   }
 
   .gift__desc {
@@ -59,6 +69,11 @@
   .gift__wrapper {
     padding: 0;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-desktop@2x.jpg") 50% no-repeat;
+      background-size: 245px auto;
+    }
   }
 
   .gift__desc {
