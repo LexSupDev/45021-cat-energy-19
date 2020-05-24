@@ -56,11 +56,15 @@
 }
 
 .example__toggle-txt {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-add;
+
   &::before {
     @include pseudo;
     content: "Было";
     text-transform: uppercase;
-    top: -1px;
+    top: -5px;
     left: -55px;
   }
 
@@ -68,8 +72,8 @@
     @include pseudo;
     content: "Стало";
     text-transform: uppercase;
+    top: -6px;
     right: -61px;
-    top: -1px;
   }
 }
 
@@ -109,13 +113,22 @@
     padding-bottom: 81px;
   }
 
-  .example__compare-image {
+  .example__pic {
     display: block;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-    margin-top: -151px;
-    padding-bottom: 9px;
+  }
+
+  .example__compare-image {
+    width: 690px;
+    height: 517px;
+    margin-top: -170px;
+    margin-left: 47px;
+    margin-bottom: 25px;
+  }
+
+  .example__toggle:checked ~ .example__toggle-container {
+    &::before {
+      transform: none;
+    }
   }
 
   .example__toggle-container {
@@ -143,6 +156,34 @@
       top: -13px;
       border: 1px solid $color-border-item;
     }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: 0 3px 5px 0 #00000040;
+    }
+
+    &:active::after {
+      border-color: $color-main;
+      box-shadow: 0 4px 5px 0 #0000004c;
+    }
+  }
+
+  .example__toggle-txt {
+    font-size: 20px;
+
+    &::before {
+      left: -70px;
+      top: -7px;
+      border-bottom: 1px dotted $color-border-item;
+      padding-bottom: 5px;
+    }
+
+    &::after {
+      right: -70px;
+      top: -7px;
+      border-bottom: 1px dotted $color-border-item;
+      padding-bottom: 5px;
+    }
   }
 }
 
@@ -161,7 +202,7 @@
   }
 
   .example__about {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     padding-left: 110px;
@@ -183,7 +224,17 @@
   }
 
   .example__compare {
-    width: 50%;
+    width: 60%;
     padding: 0;
+    padding-left: 57px;
+  }
+
+  .example__compare-image {
+    margin-top: -190px;
+    margin-bottom: 45px;
+  }
+
+  .example__toggle-wrapper {
+    margin-left: 15px;
   }
 }

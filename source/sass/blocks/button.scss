@@ -8,14 +8,33 @@
   border: 0;
   background-color: $color-main;
   color: $color-white;
+  text-align: center;
 
   &--more {
     color: $color-black;
     background-color: $color-bg;
+
+    &:hover,
+    &:focus {
+      background-color: $color-hover-grey;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   &--promo {
     font-size: 14px;
     padding: 12px 0;
+
+    &:hover,
+    &:focus {
+      background-color: $color-hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

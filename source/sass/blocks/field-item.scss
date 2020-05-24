@@ -80,28 +80,6 @@
     margin-bottom: 25px;
   }
 
-  &--email {
-    &::after {
-      @include pseudo;
-      width: 17px;
-      height: 13px;
-      background: url("../img/icon-mail.svg") no-repeat;
-      right: 15px;
-      top: 15px;
-    }
-  }
-
-  &--phone {
-    &::after {
-      @include pseudo;
-      width: 20px;
-      height: 20px;
-      background: url("../img/icon-phone.svg") no-repeat;
-      right: 12px;
-      top: 12px;
-    }
-  }
-
   &--more {
     margin-bottom: 25px;
   }
@@ -111,7 +89,7 @@
   white-space: nowrap;
   text-transform: uppercase;
   margin-right: 15px;
-  position: relative;
+
 
   &--purpose {
     padding-left: 44px;
@@ -128,6 +106,15 @@
       border: 1px solid $color-border-item;
       border-radius: 15px;
     }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $color-checkbox-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--comment {
@@ -136,6 +123,7 @@
 
   &--more {
     padding-left: 45px;
+    position: relative;
 
     &::before {
       @include pseudo;
@@ -146,13 +134,37 @@
       left: 0;
       top: -6px;
     }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $color-checkbox-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.field-item__icon {
+  &--email {
+    position: absolute;
+    right: 23px;
+    top: 22px;
+  }
+
+  &--phone {
+    position: absolute;
+    top: 19px;
+    right: 19px;
   }
 }
 
 .field-item__input {
   text-transform: uppercase;
   padding: 11px 15px 13px;
-  border: 1px solid $color-border-item;
+  border: 1px solid $color-border;
+  outline: none;
 
   &--wide {
     width: 100%;
@@ -169,6 +181,32 @@
   &--more {
     display: none;
   }
+
+  &:required {
+    border-color: $color-border;
+  }
+
+  &:hover {
+    border-color: $color-border-item;
+  }
+
+  &:active,
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $color-black;
+  }
+
+  &:invalid {
+    border-color: $color-input-error;
+  }
+}
+
+.field-item__input:valid ~ .field-item__icon {
+  fill: $color-main;
+}
+
+.field-item__input:invalid ~ .field-item__icon {
+  fill: $color-input-error;
 }
 
 .field-item__input:checked ~ .field-item__label {
@@ -180,7 +218,7 @@
       background-color: $color-main;
       border-radius: 6px;
       left: 9px;
-      top: 1px;
+      top: 2px;
     }
   }
 
@@ -334,7 +372,7 @@
         height: 18px;
         border-radius: 9px;
         left: 11px;
-        top: 2px;
+        top: 4px;
       }
     }
 

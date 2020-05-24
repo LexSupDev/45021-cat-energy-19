@@ -23,11 +23,21 @@
   line-height: 20px;
   width: 74px;
   padding-bottom: 15px;
+  color: $color-black;
 }
 
 .catalog-item__button {
   width: 100%;
   margin-bottom: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

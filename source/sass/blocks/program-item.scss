@@ -74,6 +74,17 @@
     right: -35px;
     top: 6px;
   }
+
+  &:hover::after,
+  &:focus::after {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    width: 34px;
+    right: -57px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
