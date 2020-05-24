@@ -3,20 +3,37 @@
   padding: 30px 0;
 }
 
+.copyright__logo {
+  display: block;
+  position: relative;
+
+  &:hover > .copyright__logo-img,
+  &:focus > .copyright__logo-img {
+    fill: $color-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__title {
   margin: 0;
   font-size: 16px;
   color: $color-black;
-  position: relative;
+}
 
-  &::after {
-    @include pseudo;
-    width: 29px;
-    height: 34px;
-    background: url("../img/htmlacademy.svg") no-repeat;
-    background-size: cover;
-    right: 0;
-    top: -5px;
+.copyright__logo-img {
+  fill: #666666;
+  position: absolute;
+  width: 29px;
+  height: 34px;
+  right: -2px;
+  top: -5px;
+
+  &:hover,
+  &:focus {
+    fill: $color-main;
   }
 }
 

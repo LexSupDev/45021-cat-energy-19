@@ -33,6 +33,15 @@
 
 .extra-product__button {
   margin-bottom: 17px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
