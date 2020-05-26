@@ -168,7 +168,9 @@
   }
 
   &--purpose {
-    display: none;
+    &:focus + .field-item__label {
+      outline: 1px auto #68b738;
+    }
   }
 
   &--comment {
@@ -176,7 +178,9 @@
   }
 
   &--more {
-    display: none;
+    &:focus + .field-item__label {
+      outline: 1px auto #68b738;
+    }
   }
 
   &--email {
