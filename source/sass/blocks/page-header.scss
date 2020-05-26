@@ -1,5 +1,6 @@
 .page-header__wrapper {
   padding: 0;
+  position: relative;
 }
 
 .page-header__logo {
@@ -34,7 +35,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    padding: 53px 110px 0;
+    padding: 53px 40px 0;
   }
 
   .page-header__logo {

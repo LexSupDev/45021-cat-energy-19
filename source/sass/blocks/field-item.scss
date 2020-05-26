@@ -1,6 +1,6 @@
 .field-item {
   margin: 0;
-  padding: 25px 20px 23px;
+  padding: 25px 0 23px;
   border: 0;
   position: relative;
 
@@ -13,14 +13,18 @@
     margin-top: 30px;
     padding: 0;
 
-    &::after {
+    &::after,
+    &::before {
       @include pseudo;
-      width: 100vw;
       height: 3px;
       background-color: $color-main;
       top: 12px;
-      left: 0;
       z-index: -1;
+    }
+
+    &::after {
+      width: 50vw;
+      right: 0;
     }
   }
 
@@ -37,15 +41,12 @@
   font-size: 24px;
   background-color: $color-white;
   line-height: 24px;
-
-  &--decor {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 30px;
-  }
+  font-weight: normal;
+  display: inline-block;
 
   &--contacts {
-    width: 221px;
+    width: 203px;
+    padding-right: 22px;
     margin-bottom: 32px;
   }
 
@@ -57,12 +58,6 @@
   &--more {
     padding-right: 25px;
     margin-bottom: 40px;
-  }
-}
-
-.field-item__inner {
-  &--wrap {
-    padding: 0 20px;
   }
 }
 
@@ -88,7 +83,8 @@
 .field-item__label {
   white-space: nowrap;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 14px;
+  cursor: pointer;
 
 
   &--purpose {
@@ -122,6 +118,7 @@
   }
 
   &--more {
+    white-space: normal;
     padding-left: 45px;
     position: relative;
 
@@ -149,14 +146,14 @@
 .field-item__icon {
   &--email {
     position: absolute;
-    right: 23px;
-    top: 22px;
+    right: 16px;
+    top: 16px;
   }
 
   &--phone {
     position: absolute;
-    top: 19px;
-    right: 19px;
+    top: 14px;
+    right: 13px;
   }
 }
 
@@ -180,6 +177,14 @@
 
   &--more {
     display: none;
+  }
+
+  &--email {
+    padding: 12px 10px 11px;
+  }
+
+  &--phone {
+    padding: 13px 9px 11px;
   }
 
   &:required {
@@ -241,23 +246,35 @@
 
     &--purpose {
       margin-top: 39px;
-      padding: 33px 28px 34px;
-      border: 1px solid $color-border-item;
+      padding: 0;
     }
 
     &--decor {
-      margin-top: 70px;
+      margin-top: 35px;
       padding-bottom: 0;
 
+      &::before,
       &::after {
-        width: (100vw + 1.5);
-        left: -11%;
-        top: 17px;
+        top: 52px;
       }
+
+      &::after {
+        width: 64vw;
+      }
+
+      &::before {
+        width: 50vw;
+        left: 0;
+      }
+
+    }
+
+    &--border {
+      border: none;
     }
 
     &--contacts {
-      margin-top: 80px;
+      margin-top: 45px;
     }
   }
 
@@ -269,21 +286,21 @@
       margin-left: -40px;
       padding-left: 40px;
       padding-right: 0;
-      margin-bottom: 44px;
+      margin-bottom: 84px;
     }
 
     &--comment {
       margin-left: -40px;
       padding-left: 40px;
       padding-right: 38px;
-      margin-bottom: 44px;
+      margin-bottom: 84px;
     }
 
     &--more {
       margin-left: -40px;
       padding-left: 40px;
       padding-right: 41px;
-      margin-bottom: 33px;
+      margin-bottom: 72px;
     }
   }
 
@@ -296,6 +313,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    &--border {
+      padding: 33px 28px 34px;
+      border: 1px solid $color-border-item;
     }
   }
 
@@ -335,6 +357,10 @@
 
     &--comment {
       height: 174px;
+    }
+
+    &--email {
+      padding: 12px 25px 14px;
     }
   }
 
@@ -383,6 +409,16 @@
       }
     }
   }
+
+  .field-item__icon {
+    &--email {
+      top: 19px;
+    }
+
+    &--phone {
+      top: 17px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -390,27 +426,27 @@
     padding: 0;
 
     &--purpose {
-      padding: 33px 28px 31px;
       margin-top: 0;
       margin-left: 73px;
     }
 
     &--decor {
       margin-top: 74px;
+
+      &::before,
+      &::after {
+        top: 17px;
+      }
     }
   }
 
   .field-item__legend {
-    &--contacts {
-      margin-bottom: 77px;
-    }
-
     &--comment {
-      margin-bottom: 79px;
+      margin-bottom: 80px;
     }
 
     &--more {
-      margin-bottom: 66px;
+      margin-bottom: 70px;
     }
   }
 
@@ -451,6 +487,18 @@
       &:last-child {
         margin: 0;
       }
+    }
+  }
+
+  .field-item__icon {
+    &--email {
+      right: 23px;
+      top: 20px;
+    }
+
+    &--phone {
+      right: 19px;
+      top: 17px;
     }
   }
 }

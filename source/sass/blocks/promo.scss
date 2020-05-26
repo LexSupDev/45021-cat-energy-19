@@ -8,6 +8,14 @@
   padding-top: 26px;
   padding-bottom: 22px;
   position: relative;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -21,15 +29,18 @@
 .promo__desc {
   margin: 0;
   text-transform: uppercase;
-  padding-bottom: 26px;
+  padding-bottom: 167px;
 }
 
 .promo__link {
+  margin-top: 135px;
   font-size: 14px;
 }
 
 .promo__image {
-  margin-bottom: 3px;
+  position: absolute;
+  left: calc(50% - 140px);
+  top: 167px;
 }
 
 .promo__bg-image {
@@ -48,6 +59,7 @@
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
+    margin-bottom: 531px;
   }
 
   .promo__title {
@@ -66,27 +78,26 @@
     font-size: 20px;
     text-align: left;
     padding-left: 120px;
-    padding-bottom: 18px;
+    padding-bottom: 0;
+    margin-bottom: 46px;
   }
 
   .promo__link {
-    position: absolute;
     font-size: 20px;
     padding: 16px 27px;
-    width: auto;
+    width: 245px;
     top: 284px;
     line-height: 20px;
     margin-left: 120px;
+    margin-top: 0;
   }
 
   .promo__image {
     height: 609px;
     width: 709px;
-    margin: 0;
-  }
-
-  .promo__bg-image {
-    visibility: hidden;
+    z-index: -1;
+    left: calc(50% - 355px);
+    top: 257px;
   }
 }
 
@@ -94,26 +105,44 @@
   .promo__wrapper {
     padding-top: 106px;
     padding-left: 70px;
-    margin-bottom: 134px;
+    margin-bottom: 270px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px 696px;
+      background-color: $color-main;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -116px;
+      width: 50vw;
+      height: 696px;
+      left: 50%;
+      z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
-  .promo__link {
-    top: 340px;
+  .promo__title {
+    padding-left: 50px;
+  }
+
+  .promo__desc {
+    margin-bottom: 51px;
+    padding-left: 50px;
   }
 
   .promo__image {
-    margin-top: -282px;
-    margin-left: 162px;
-    width: auto;
-    height: auto;
+    width: 552px;
+    height: 499px;
+    top: 25px;
+    left: calc(50% - 160px);
   }
 
-  .promo__bg-image {
-    visibility: visible;
-    height: auto;
-    width: auto;
-    right: 0;
-    top: -116px;
-    left: auto;
+  .promo__link {
+    margin-left: 50px;
   }
 }

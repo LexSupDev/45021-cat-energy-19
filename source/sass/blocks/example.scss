@@ -43,6 +43,7 @@
   border: 1px solid $color-border-item;
   border-radius: 6px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     @include pseudo;
@@ -80,6 +81,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $color-white;
+    background-image: linear-gradient(to top,#eaeaea 42.7%,#fff 0);
   }
 
   .example__wrapper {
@@ -99,7 +101,7 @@
     line-height: 24px;
     padding-bottom: 35px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 40px;
   }
 
   .example__stats {
@@ -109,7 +111,6 @@
   }
 
   .example__compare {
-    background-color: #eaeaea;
     padding-bottom: 81px;
   }
 
@@ -176,6 +177,7 @@
       top: -7px;
       border-bottom: 1px dotted $color-border-item;
       padding-bottom: 5px;
+      cursor: pointer;
     }
 
     &::after {
@@ -183,11 +185,28 @@
       top: -7px;
       border-bottom: 1px dotted $color-border-item;
       padding-bottom: 5px;
+      cursor: pointer;
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      border-bottom: 1px solid $color-black;
+    }
+
+    &:active::before,
+    &:active::after {
+      border: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(to top,#eaeaea 76.6%,#fff 0);
+  }
+
   .example__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +215,7 @@
   .example__title {
     width: 100%;
     border: 0;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-bottom: 71px;
     padding-top: 0;
   }
@@ -205,9 +224,8 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-top: 71px;
-    background-color: #eaeaea;
     padding-bottom: 73px;
   }
 
@@ -226,7 +244,7 @@
   .example__compare {
     width: 60%;
     padding: 0;
-    padding-left: 57px;
+    padding-left: 43px;
   }
 
   .example__compare-image {
@@ -235,6 +253,6 @@
   }
 
   .example__toggle-wrapper {
-    margin-left: 15px;
+    margin-left: 83px;
   }
 }

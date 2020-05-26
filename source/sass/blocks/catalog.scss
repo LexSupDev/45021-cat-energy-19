@@ -7,7 +7,7 @@
   font-family: $ff-add;
   font-size: $ff-size-large;
   font-weight: normal;
-  padding: 23px 20px 38px;
+  padding: 23px 20px 37px;
   border-bottom: 1px solid $color-border;
 }
 
@@ -38,7 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .catalog__title {

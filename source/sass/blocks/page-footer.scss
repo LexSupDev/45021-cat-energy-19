@@ -14,7 +14,7 @@
   }
 }
 
-.page-footer__inner {
+.page-footer__bottom {
   background-color: $color-bg;
 }
 
@@ -46,6 +46,6 @@
     background-color: $color-white;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 609px);
   }
 }

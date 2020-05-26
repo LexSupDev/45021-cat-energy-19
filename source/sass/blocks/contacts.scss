@@ -1,5 +1,6 @@
 .contacts {
-  padding: 28px 0 23px;
+  padding-top: 28px;
+  padding-bottom: 23px;
 
   &--dark {
     background-color: $color-bg;
@@ -31,7 +32,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 65px 40px 61px;
+    padding-top: 65px;
+    padding-bottom: 61px;
+  }
+
+  .contacts__wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .contacts__partnership {

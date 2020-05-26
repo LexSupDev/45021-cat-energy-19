@@ -22,13 +22,13 @@
   text-transform: uppercase;
   line-height: 20px;
   width: 74px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   color: $color-black;
 }
 
 .catalog-item__button {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 
   &:hover,
   &:focus {
@@ -56,6 +56,7 @@
   }
 
   .catalog-item__picture {
+    display: block;
     margin-bottom: 20px;
   }
 
@@ -95,11 +96,11 @@
     width: 20.083%;
     margin-bottom: 143px;
 
-    &:nth-last-child(2) {
+    &:nth-last-child(-n+4) {
       margin-bottom: auto;
     }
 
-    &:nth-child(n+5) {
+    &:nth-last-child(-n+1) {
       margin-bottom: 0;
     }
   }
