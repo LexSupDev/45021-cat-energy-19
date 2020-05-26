@@ -81,7 +81,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $color-white;
-    background-image: linear-gradient(to top,#eaeaea 42.7%,#fff 0);
+    background-image: linear-gradient(to top, #eaeaea 42.7%, #ffffff 0);
   }
 
   .example__wrapper {
@@ -204,7 +204,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to top,#eaeaea 76.6%,#fff 0);
+    background-image: linear-gradient(to top, #eaeaea 76.6%, #ffffff 0);
   }
 
   .example__wrapper {
