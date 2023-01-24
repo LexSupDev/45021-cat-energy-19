@@ -1,1 +1,1 @@
-Link https://salxs.github.io/45021-cat-energy-19/
+Учебный проект от HTML Academy
